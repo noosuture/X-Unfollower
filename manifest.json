@@ -1,0 +1,49 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "icon128.plasmo.3c1ed2d2.png",
+         "16": "icon16.plasmo.6c567d50.png",
+         "32": "icon32.plasmo.76b92899.png",
+         "48": "icon48.plasmo.aced7582.png",
+         "64": "icon64.plasmo.8bb5e6e0.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "author": "Nnn",
+   "background": {
+      "service_worker": "static/background/index.js"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [  ],
+      "js": [ "main.6d6202f3.js" ],
+      "matches": [ "*://*.twitter.com/*", "*://*.x.com/*" ]
+   } ],
+   "description": "莫",
+   "externally_connectable": {
+      "matches": [ "*://*.twitter.com/*", "*://*.x.com/*" ]
+   },
+   "host_permissions": [ "https://xtensions.pro/*", "*://*.twitter.com/*", "*://*.x.com/*" ],
+   "icons": {
+      "128": "icon128.plasmo.3c1ed2d2.png",
+      "16": "icon16.plasmo.6c567d50.png",
+      "32": "icon32.plasmo.76b92899.png",
+      "48": "icon48.plasmo.aced7582.png",
+      "64": "icon64.plasmo.8bb5e6e0.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhB9wgqwaKUTolhBVgjrlmnVOImrSMP8FaAae7AzmyHab+935w8i8Hl0hI1cqjJHEGpMRRZHVQc5m0vvFam9DMCn1Q7/nPl3oLxEjKvDbZtbQIMGHhd++5mGkqke9v8RNFuX3i9wOvMO3AHzUif7dndabFunYWFx7dQzLajAnXWVqpnCF3JSJBWybj75L/JTcXqfRx4r9UQ4ZA74uNwgTrSaQWzq91+DJEOEgGTPSO5a1SA924xXgd3ztIH/Mnwio0D8VQ+3eVsyTQhU/LAANZ10MKbX+jCHPKMvRFd2vg7gk6D/gEzLWiVXxgjguTiP8S8+X97ocyIgsD11ZQocuGwIDAQAB",
+   "manifest_version": 3,
+   "name": "Nnn Unfollower",
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "options.html"
+   },
+   "permissions": [ "storage", "scripting", "webRequest" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "4.9",
+   "web_accessible_resources": [ {
+      "extension_ids": [ "aekapeghhlcblpdcahndmoggepeccmok" ],
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "options.html", "tabs/pro.html" ]
+   } ]
+}
